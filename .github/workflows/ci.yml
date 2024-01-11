@@ -1,0 +1,15 @@
+name: dotnet-tbd
+run-name: Build and deploy to Notino K8S (started ${{ github.actor }})
+
+on:
+  workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+
+jobs:
+  build:
+    uses: remunda/dotnet-test/.github/workflows/build-dotnet.yml@main
+    with:
+        config-path: 'not'
