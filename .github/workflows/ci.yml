@@ -8,6 +8,6 @@ on:
 
 jobs:
   build:
-    uses: remunda/dotnet-test/.github/workflows/build-dotnet.yml@main
+    uses: remunda/test-actions/.github/workflows/dotnet-tbd.yml@main
     with:
-      config-path: "not"
+      config-path: 'x'
